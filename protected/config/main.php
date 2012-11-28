@@ -2,9 +2,19 @@
 
 return array(
 	'basePath' => realpath(dirname(__FILE__) . '/..'),
+    'import' => array(
+        'application.models.*',
+        'application.components.*',
+    ),
 	'name' => 'Crazy Radio',
-	'components' => array(),
+    'defaultController' => 'default',
+    'theme' => 'default',
+	'components' => array(
+        'urlManager' => array(
+            'urlFormat' => 'path',
+            'showScriptName' => false,
+        ),
+    ),
 	'modules' => array(),
 	'params' => array(),
 );
-
