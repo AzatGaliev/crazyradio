@@ -10,6 +10,13 @@ return array(
     'defaultController' => 'default',
     'theme' => 'default',
 	'components' => array(
+        'db' => array(
+            'connectionString' => 'mysql:host=localhost;dbname=crazyradio',
+            'username' => 'crazyradio',
+            'password' => '78',
+            'emulatePrepare' => true,
+            'tablePrefix' => '',
+        ),
         'urlManager' => array(
             'urlFormat' => 'path',
             'showScriptName' => false,
